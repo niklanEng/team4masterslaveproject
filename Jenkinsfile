@@ -11,7 +11,7 @@ pipeline{
         stage('2-parallel-jobs'){
             parallel{
                 stage('1-subjob1'){
-                    agent{
+                    agent {
                         label 'slave2'
                     }
                     steps{
@@ -28,8 +28,8 @@ pipeline{
                 }
             }
         }
-        stage(3-codetest){
-            agent{
+        stage('3-codetest'){
+            agent {
                 label 'slave1'
             }
             steps{
