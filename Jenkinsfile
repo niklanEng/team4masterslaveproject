@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('1-clone'){
             steps{
-                sh 'cat/etc/passwd'
+                sh 'cat /etc/passwd'
             }
         }
         stage('2-parallel-jobs'){
